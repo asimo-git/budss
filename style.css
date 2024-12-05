@@ -1,0 +1,21 @@
+@font-face {
+  font-family: "outfitthin";
+  src: local("Outfit") url("outfit-variablefont_wght-webfont.woff2")
+      format("woff2"),
+    url("outfit-variablefont_wght-webfont.woff") format("woff");
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 375px) {
+}
