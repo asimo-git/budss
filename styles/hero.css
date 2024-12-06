@@ -1,0 +1,32 @@
+.hero {
+  height: 591px;
+  display: flex;
+  gap: 30px;
+  width: 100%;
+}
+
+.hero__text-container {
+  margin: 71px 0 0 110px;
+  flex: 1 1;
+  min-width: 0;
+}
+
+.hero__title {
+  font-weight: 700;
+  font-size: 96px;
+  margin: 0;
+}
+
+.hero__text {
+  padding-top: 20px;
+  max-width: 570px;
+  font-weight: 400;
+  margin-bottom: 40px;
+}
+
+.hero__img-container {
+  min-width: 0;
+  max-width: 595px;
+  flex: 1 1;
+  align-self: flex-end;
+}

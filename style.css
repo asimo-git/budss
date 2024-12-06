@@ -1,10 +1,27 @@
+@import url("./styles/header.css");
+@import url("./styles/hero.css");
+
 @font-face {
-  font-family: "outfitthin";
-  src: local("Outfit") url("outfit-variablefont_wght-webfont.woff2")
-      format("woff2"),
-    url("outfit-variablefont_wght-webfont.woff") format("woff");
+  font-family: "Outfit";
+  src: local("Outfit")
+    /* url("./fonts/Outfit-Thin.woff2") format("woff2"),
+    url("./fonts/Outfit-Thin.woff") format("woff"); */
+    url("./fonts/Outfit-VariableFont_wght.ttf") format("ttf");
   font-weight: 100 900;
   font-style: normal;
+}
+
+:root {
+  --secondary-2-color: #ffaa4c;
+  --bg-color: #181818;
+  --main-white-color: #ffffff;
+  --main-dark-color: #000000;
+  --primary-1-color: #954ced;
+  --content-padding: 60px;
+  font-family: "Outfit", sans-serif;
+  font-size: 20px;
+  background-color: var(--bg-color);
+  color: var(--main-white-color);
 }
 
 html {
@@ -15,6 +32,22 @@ html {
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+.contact-sales-btn {
+  height: 57px;
+  border-radius: 16px;
+  border: 0;
+  padding: 16px 30px;
+  background-color: var(--primary-1-color);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--main-white-color);
 }
 
 @media screen and (max-width: 375px) {

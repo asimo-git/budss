@@ -4,14 +4,38 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>coffee-house</title>
+    <title>budss</title>
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="style.css" />
     <link rel="shortcut icon" href="img/favicon.ico" sizes="64x64" />
   </head>
 
   <body>
-    <header class="header"></header>
+    <header class="header">
+      <div class="header__tabs-container">
+        <div class="header__tabs">
+          <div class="header__tab header__tab_active">For Business</div>
+          <div class="header__tab">For Customers</div>
+        </div>
+      </div>
+      <div class="header__logo-container">
+        <img class="header__logo" src="./img/logo.png" alt="logo" />
+        <button class="contact-sales-btn">Contact sales</button>
+      </div>
+    </header>
+    <section class="hero">
+      <div class="hero__text-container">
+        <h2 class="hero__title">Everyone<br />is an Influencer</h2>
+        <div class="hero__text">
+          Budss is a payments as a service and WOM engine dedicated to
+          acquisition and retention of customers to your business.
+        </div>
+        <button class="contact-sales-btn">Contact sales</button>
+      </div>
+      <div class="hero__img-container">
+        <img src="./img/hero-img.png" alt="girl with glasses" />
+      </div>
+    </section>
     <main class="main"></main>
     <footer class="footer"></footer>
     <script src="index.js"></script>
