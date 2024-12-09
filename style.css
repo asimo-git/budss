@@ -1,5 +1,6 @@
 @import url("./styles/header.css");
 @import url("./styles/hero.css");
+@import url("./styles/about.css");
 
 @font-face {
   font-family: "Outfit";
@@ -20,6 +21,7 @@
   --content-padding: 60px;
   font-family: "Outfit", sans-serif;
   font-size: 20px;
+  letter-spacing: 0;
   background-color: var(--bg-color);
   color: var(--main-white-color);
 }
@@ -37,6 +39,11 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+section {
+  margin-bottom: 100px;
+  padding: 0 var(--content-padding);
 }
 
 .contact-sales-btn {
