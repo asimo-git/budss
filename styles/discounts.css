@@ -1,0 +1,22 @@
+.discounts {
+  background-color: var(--primary-1-color);
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: flex;
+  gap: 100px;
+  justify-content: center;
+}
+
+.discount__number {
+  font-weight: bold;
+  font-size: 64px;
+  line-height: 106%;
+  margin-bottom: 16px;
+}
+
+.discount__decryption {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 120%;
+  max-width: 220px;
+}
