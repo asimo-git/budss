@@ -4,6 +4,10 @@
 @import url("./styles/create-group.css");
 @import url("./styles/discounts.css");
 @import url("./styles/advantages.css");
+@import url("./styles/slogan.css");
+@import url("./styles/links.css");
+@import url("./styles/logos.css");
+@import url("./styles/footer.css");
 
 @font-face {
   font-family: "Outfit";
@@ -23,6 +27,7 @@
   --secondary-1-color: #2fdbbc;
   --secondary-2-color: #ffaa4c;
   --secondary-3-color: #444444;
+  --secondary-4-color: #cfcfcf;
   --content-padding: 60px;
   font-family: "Outfit", sans-serif;
   font-size: 20px;
@@ -60,6 +65,7 @@ section {
   font-weight: 600;
   font-size: 20px;
   color: var(--main-white-color);
+  cursor: pointer;
 }
 
 .main-text {

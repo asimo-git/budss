@@ -1,0 +1,7 @@
+.logos {
+  background-color: var(--main-white-color);
+  margin: 0;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-between;
+}
