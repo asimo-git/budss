@@ -21,6 +21,11 @@
   height: 57px;
   margin-left: 20px;
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.footer__app-btn:hover {
+  transform: scale(120%);
 }
 
 .footer__app-btn-img {

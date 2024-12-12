@@ -11,11 +11,20 @@
 }
 
 .create-group__row {
+  display: flex;
   font-weight: bold;
   line-height: 106%;
   font-size: 128px;
   overflow: hidden;
   white-space: nowrap;
+}
+
+.create-group__double-stroke {
+  animation: moveLeft 20s linear infinite;
+}
+
+.create-group__double-stroke_move-right {
+  animation: moveRight 20s linear infinite;
 }
 
 .create-group__stroke_accent-1 {
@@ -37,4 +46,21 @@
   top: 0;
   left: 50%;
   transform: translateX(-50%);
+}
+
+@keyframes moveLeft {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+@keyframes moveRight {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }

@@ -59,13 +59,19 @@ section {
 .contact-sales-btn {
   height: 57px;
   border-radius: 16px;
-  border: 0;
+  border: transparent solid 2px;
   padding: 16px 30px;
   background-color: var(--primary-1-color);
   font-weight: 600;
   font-size: 20px;
   color: var(--main-white-color);
   cursor: pointer;
+  transition: all 0.5s;
+}
+
+.contact-sales-btn:hover {
+  background-color: var(--main-dark-color);
+  border: var(--primary-1-color) solid 2px;
 }
 
 .main-text {

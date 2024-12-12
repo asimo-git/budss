@@ -40,6 +40,11 @@
   height: 90px;
   background-color: var(--primary-1-color);
   border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.links__link:hover {
+  transform: scale(120%);
 }
 
 .links__link_x,
