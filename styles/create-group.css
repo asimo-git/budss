@@ -36,9 +36,12 @@
 .create-group__stroke_accent-3 {
   color: var(--secondary-2-color);
 }
+
 .create-group__stroke_grey {
-  color: transparent;
-  -webkit-text-stroke: 1px var(--secondary-3-color);
+  color: var(--bg-color);
+  text-shadow: 1px 0 1px var(--secondary-3-color),
+    0 1px 1px var(--secondary-3-color), -1px 0 1px var(--secondary-3-color),
+    0 -1px 1px var(--secondary-3-color);
 }
 
 .create-group__image-container {
@@ -62,5 +65,24 @@
   }
   100% {
     transform: translateX(0);
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .create-group {
+    padding: 101px 0;
+  }
+
+  .create-group__text-background {
+    gap: 93px;
+  }
+  .create-group__row {
+    font-size: 48px;
+  }
+
+  .create-group__image-container {
+    top: 40px;
+    height: 461px;
+    width: 228px;
   }
 }

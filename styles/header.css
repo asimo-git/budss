@@ -38,3 +38,13 @@
   height: 49px;
   object-fit: contain;
 }
+
+@media screen and (max-width: 580px) {
+  .header__tabs {
+    padding: 0;
+  }
+
+  header .contact-sales-btn {
+    display: none;
+  }
+}
