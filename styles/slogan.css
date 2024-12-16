@@ -24,3 +24,18 @@
   display: block;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 580px) {
+  .slogan {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .slogan__container {
+    padding: 40px 20px;
+  }
+
+  .slogan__title {
+    font-size: 40px;
+  }
+}

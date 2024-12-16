@@ -15,8 +15,11 @@
 }
 
 .about__main-text {
-  width: 430px;
-  flex-shrink: 0;
+  max-width: 430px;
+}
+
+.main-text_accent {
+  white-space: nowrap;
 }
 
 .about__cards-container {

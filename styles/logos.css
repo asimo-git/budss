@@ -3,5 +3,20 @@
   margin: 0;
   padding-bottom: 100px;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 40px 90px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 970px) {
+}
+
+@media screen and (max-width: 580px) {
+  .logos {
+    gap: 40px;
+  }
+
+  .logos__logo {
+    height: 43px;
+  }
 }
