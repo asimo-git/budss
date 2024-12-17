@@ -1,0 +1,114 @@
+.links {
+  background-color: var(--main-white-color);
+  margin: 0;
+  padding-bottom: 100px;
+}
+
+.links__container {
+  display: flex;
+  color: var(--main-dark-color);
+}
+
+.links__texts {
+  flex: 4 1 500px;
+  max-width: 850px;
+}
+
+.links__title {
+  font-weight: bold;
+  font-size: 96px;
+  line-height: 106%;
+  margin: 0 0 20px;
+}
+
+.links__main-text {
+  font-weight: 400;
+  line-height: 120%;
+  max-width: 560px;
+}
+
+.links__icon-container {
+  flex: 3 1 300px;
+  padding: 45px 0 45px 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.links__link {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-color: var(--primary-1-color);
+  border-radius: 50%;
+  transition: all 0.5s;
+}
+
+.links__link:hover {
+  transform: scale(120%);
+}
+
+.links__link_x,
+.links__link_tiktok {
+  margin-top: 100px;
+}
+
+.links__link_facebook {
+  background-image: url(../img/icons/Facebook.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.links__link_x {
+  background-image: url(../img/icons/Twitter.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.links__link_tiktok {
+  background-image: url(../img/icons/TikTok.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+.links__link_instagram {
+  background-image: url(../img/icons/Instagram.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto;
+}
+
+@media screen and (max-width: 970px) {
+  .links__container {
+    flex-wrap: wrap;
+  }
+
+  .links__texts {
+    flex-basis: 100%;
+  }
+
+  .links__title {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .links {
+    padding-bottom: 40px;
+  }
+
+  .links__title {
+    font-size: 40px;
+  }
+
+  .links__icon-container {
+    padding: 20px 0;
+  }
+
+  .links__link {
+    width: 64px;
+    height: 64px;
+  }
+}
