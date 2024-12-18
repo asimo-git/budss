@@ -11,6 +11,7 @@
 @import url("./styles/cookie-modal.css");
 @import url("./styles/burger-btn.css");
 
+
 @font-face {
   font-family: "Outfit";
   src: url("./fonts/Outfit-VariableFont_wght.ttf") format("truetype");
@@ -79,17 +80,11 @@ button:active {
   transform: scale(0.98);
 }
 
-/* .main-btn:hover {
-  background-color: var(--main-dark-color);
-  border: var(--primary-1-color) solid 2px;
-} */
-
 @media (hover: hover) {
   .main-btn:hover {
     background-color: var(--main-dark-color);
     border: var(--primary-1-color) solid 2px;
-  }
-}
+}}
 
 .main-text {
   font-weight: 600;
