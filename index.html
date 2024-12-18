@@ -20,12 +20,32 @@
       </div>
       <div class="header__logo-container">
         <img class="header__logo" src="./img/logo.png" alt="logo" />
-        <button class="contact-sales-btn">Contact sales</button>
+        <button class="header__main-btn main-btn">Contact sales</button>
         <button class="burger-btn">
           <div class="burger-btn__line"></div>
           <div class="burger-btn__line"></div>
           <div class="burger-btn__line"></div>
         </button>
+
+        <div class="header__fullscreen-menu">
+          <div class="close-btn">
+            <div class="close-btn__container">
+              <div class="close-btn__line"></div>
+              <div class="close-btn__line"></div>
+            </div>
+          </div>
+          <button class="main-btn">Contact sales</button>
+          <nav class="header__links-container">
+            <a href="#" class="header__menu-link">For Business</a>
+            <a href="#" class="header__menu-link">For Customers</a>
+            <a href="#" class="header__menu-link">Privacy Policy</a>
+            <a href="#" class="header__menu-link">Terms Of Use - Seller</a>
+            <a href="#" class="header__menu-link">
+              Terms of Use - Sellers & Customers
+            </a>
+          </nav>
+        </div>
+
       </div>
     </header>
 
@@ -36,7 +56,7 @@
           Budss is a payments as a service and WOM engine dedicated to
           acquisition and retention of customers to your business.
         </div>
-        <button class="contact-sales-btn">Contact sales</button>
+        <button class="main-btn">Contact sales</button>
       </div>
       <div class="hero__img-container">
         <img src="./img/hero-img.png" alt="girl with glasses" />
@@ -226,9 +246,7 @@
       <section class="slogan">
         <div class="slogan__container">
           <h2 class="slogan__title">Let Your Business Grow</h2>
-          <button class="contact-sales-btn slogan__button">
-            Contact sales
-          </button>
+          <button class="main-btn slogan__button">Contact sales</button>
         </div>
       </section>
 
@@ -261,19 +279,19 @@
 
       <section class="logos">
         <div class="logos__logo-container">
-          <img src="/img/logo-1.png" alt="woo commerce" class="logos__logo" />
+          <img src="img/logo-1.png" alt="woo commerce" class="logos__logo" />
         </div>
         <div class="logos__logo-container">
-          <img src="/img/logo-2.png" alt="shopify" class="logos__logo" />
+          <img src="img/logo-2.png" alt="shopify" class="logos__logo" />
         </div>
         <div class="logos__logo-container">
-          <img src="/img/logo-3.png" alt="square" class="logos__logo" />
+          <img src="img/logo-3.png" alt="square" class="logos__logo" />
         </div>
         <div class="logos__logo-container">
-          <img src="/img/logo-4.png" alt="squarespace" class="logos__logo" />
+          <img src="img/logo-4.png" alt="squarespace" class="logos__logo" />
         </div>
         <div class="logos__logo-container">
-          <img src="/img/logo-5.png" alt="clover" class="logos__logo" />
+          <img src="img/logo-5.png" alt="clover" class="logos__logo" />
         </div>
       </section>
     </main>
@@ -284,9 +302,7 @@
         <a href="#" class="footer__category">For Business</a>
         <a href="#" class="footer__category">For Customers</a>
       </div>
-      <button class="contact-sales-btn footer__contact-sales-btn">
-        Contact sales
-      </button>
+      <button class="main-btn footer__main-btn">Contact sales</button>
       <div class="footer__app-btn-container">
         <button class="footer__app-btn">
           <img
@@ -316,6 +332,21 @@
         >
       </div>
     </footer>
+
+    <div class="cookie-modal">
+      <div class="cookie-modal__container">
+        <div class="cookie-modal__text">
+          This website uses cookies to ensure you get the best experience on our
+          website. They also allow us to analyze user behavior in order to
+          constantly improve the website for you.
+        </div>
+        <div class="cookie-modal__buttons-group">
+          <button class="main-btn cookie-modal__accept-btn">Accept</button>
+          <button class="main-btn cookie-modal__decline-btn">Decline</button>
+        </div>
+      </div>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>

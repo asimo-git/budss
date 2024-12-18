@@ -39,12 +39,72 @@
   object-fit: contain;
 }
 
+.header__fullscreen-menu {
+  display: none;
+}
+
 @media screen and (max-width: 580px) {
   .header__tabs {
     padding: 0;
   }
 
-  header .contact-sales-btn {
+  .header__main-btn {
     display: none;
+  }
+
+  .header__fullscreen-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    padding: 16px;
+    background-color: var(--bg-color);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: start;
+    transform: translateY(-100%);
+    transition: all 0.6s ease;
+  }
+
+  .header__fullscreen-menu_active {
+    transform: translateY(0);
+  }
+
+  .close-btn {
+    position: absolute;
+    top: 26px;
+    right: 26px;
+  }
+
+  .close-btn__container {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+  }
+
+  .close-btn__line {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    background-color: white;
+    border-radius: 2px;
+  }
+
+  .close-btn__line:nth-child(1) {
+    transform: rotate(45deg);
+  }
+
+  .close-btn__line:nth-child(2) {
+    transform: rotate(-45deg);
+  }
+
+  .header__menu-link {
+    display: block;
+    color: var(--main-white-color);
+    text-decoration: none;
+    margin-bottom: 16px;
   }
 }
