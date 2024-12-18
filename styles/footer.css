@@ -49,8 +49,10 @@
   transition: all 0.5s;
 }
 
-.footer__app-btn:hover {
-  transform: scale(120%);
+@media (hover: hover) {
+  .footer__app-btn:hover {
+    transform: scale(110%);
+  }
 }
 
 .footer__app-btn-img {

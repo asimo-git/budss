@@ -43,8 +43,10 @@
   transition: all 0.5s;
 }
 
-.links__link:hover {
-  transform: scale(120%);
+@media (hover: hover) {
+  .links__link:hover {
+    transform: scale(120%);
+  }
 }
 
 .links__link_x,

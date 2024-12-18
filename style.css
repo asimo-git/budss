@@ -8,6 +8,8 @@
 @import url("./styles/links.css");
 @import url("./styles/logos.css");
 @import url("./styles/footer.css");
+@import url("./styles/cookie-modal.css");
+@import url("./styles/burger-btn.css");
 
 @font-face {
   font-family: "Outfit";
@@ -25,10 +27,11 @@
   --secondary-2-color: #ffaa4c;
   --secondary-3-color: #444444;
   --secondary-4-color: #cfcfcf;
+  --secondary-5-color: #383838;
+  --secondary-6-color: #ba8bf3;
   --content-padding: 60px;
   font-family: "Outfit", sans-serif;
   font-size: 20px;
-  /* letter-spacing: 0; */
   background-color: var(--bg-color);
   color: var(--main-white-color);
 }
@@ -53,7 +56,7 @@ section {
   padding: 0 var(--content-padding);
 }
 
-.contact-sales-btn {
+.main-btn {
   height: 57px;
   border-radius: 16px;
   border: transparent solid 2px;
@@ -66,9 +69,26 @@ section {
   transition: all 0.5s;
 }
 
-.contact-sales-btn:hover {
+:focus-visible {
+  outline: var(--secondary-6-color) solid 4px;
+}
+
+button:active {
   background-color: var(--main-dark-color);
   border: var(--primary-1-color) solid 2px;
+  transform: scale(0.98);
+}
+
+/* .main-btn:hover {
+  background-color: var(--main-dark-color);
+  border: var(--primary-1-color) solid 2px;
+} */
+
+@media (hover: hover) {
+  .main-btn:hover {
+    background-color: var(--main-dark-color);
+    border: var(--primary-1-color) solid 2px;
+  }
 }
 
 .main-text {
@@ -95,24 +115,6 @@ section {
   z-index: -1;
 }
 
-.burger-btn {
-  width: 40px;
-  height: 40px;
-  padding: 10px 8px;
-  cursor: pointer;
-  border: 0;
-  background-color: var(--bg-color);
-  display: none;
-}
-
-.burger-btn__line {
-  width: 100%;
-  height: 2px;
-  background-color: var(--main-white-color);
-  border-radius: 8px;
-  margin-bottom: 7px;
-}
-
 @media screen and (max-width: 580px) {
   :root {
     --content-padding: 16px;
@@ -122,21 +124,11 @@ section {
     margin-bottom: 40px;
   }
 
-  .burger-btn {
-    display: block;
-  }
-
-  .contact-sales-btn {
+  .main-btn {
     width: 100%;
   }
 
   .main-text {
     font-size: 24px;
   }
-}
-
-@media screen and (max-width: 970px) {
-}
-
-@media screen and (max-width: 580px) {
 }
